@@ -13,7 +13,7 @@ const selectElement = function (element){
 };
 window.addEventListener("scroll",() =>{
   if (window.pageYOffset > 100){
-    toTop.classList.add("active");    
+    toTop.classList.add("active"); 
   } else{
     toTop.classList.remove("active"); 
   }
@@ -153,6 +153,12 @@ function smoothScroll(target,duration){
   
 }
 
+
+
+
+
+
+
 var logos = document.querySelector('.to-top');
 logos.addEventListener('click', function(){
   smoothScroll('.logo',1000);
@@ -167,9 +173,3 @@ var logos = document.querySelector('.to-top');
 logos.addEventListener('click', function(){
   smoothScroll('.hamburger',1000);
 });
-
-
-
-
-
-
